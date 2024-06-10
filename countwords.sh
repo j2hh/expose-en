@@ -6,7 +6,7 @@ rm wordcounts.txt 2> /dev/null
 detex thesis_main.tex > thesis_main.txt
 
 # Removes everything before Einleitung and after Anhang
-BEGINNING="Einleitung"
+BEGINNING="Introduction"
 ENDING="Anhang"
 while read p; do
   # end txt when end was found
