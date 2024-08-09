@@ -1,40 +1,37 @@
 \newpage
 \section{Introduction}
-In an age in which agile working and frequent reorganizations are on the rise 
-in large tech companies but surprisingly also in non-tech areas \cite{noauthor_orgs_nodate}, it gets increasingly complicated for teams to stay structured 
-and organized. Those challenges can be tackled with a good internal infrastructure 
-and company fitted tools.
-\\
-\\
-Despite a high level of digitalization and automation in the business world, there are still 
-great challenges to overcome. For many of those challenges, custom software solutions can 
-be developed to solve those problems. One of those fields, which can still be optimized is 
-the search for suitable contacts within a company. In day-to-day business, it is almost 
-daily necessary to work together with colleagues from other departments or teams to tackle 
-a variety of problems. Right now, most of the time a handful of colleagues must be asked
-via chat or email to find the right contact. Although tools like Microsoft Teams, Jira or 
-Slack offer the possibility to search for colleagues, they are not specialized in finding colleagues
-based on a specific topic or problem. This is where this project tries to offer a solution.\\
-\\
-The following sections will provide a detailed overview of the project goals, technologies as 
-well as methodologies that will be used in the course of the project.
 
-\section{Problem Statement}
-In the Telekom field operations team, and in many similar teams, it is often necessary to collaborate
-with colleagues from other departments and teams. The problem is that often times processes to ensure 
-fast and efficient communication are missing. Additionally, frequent reorganizations and agile working 
-environments make it difficult to build a network of the right experts. This leads to an unnecessary
-loss of time and efficiency. This project aims to solve this problem by offering a custom fitted tool
-that supports finding the right contacts by providing a user-friendly tool that specializes in finding 
-the right contacts with the use of keywords and topics, as well as an automatic search optimization through
-machine learning approaches.
+\subsection{Background}
+“Expert Finding Systems (EFS), also called Expertise Location Systems (ELS) enable users to discover subject matter experts in order to hire or acquire their knowledge.” (\cite[page vii]{maybury_expert_nodate}) It is an important asset especially for big corporations, as it can boost efficiency and lower the barrier of entry for new employees. First appearances of EFS can be traced back to the papers “Enterprise expert and knowledge discovery” (\cite{mattox_enterprise_1999}) and “Facilitating the Online Search of Experts at NASA Using Expert Seeker People-Finder” (\cite{becerra-fernandez_facilitating_nodate}) . Further research has been conducted by Mark T. Maybury in his Paper “Expert Finding Systems” (\cite{maybury_expert_nodate}). The National Forum on Expert Finding Systems states Research Gate, LinkedIn or Harvard Catalyst Profiles as current examples of EFS. (\cite{noauthor_national_nodate})  While examples like Research Gate or LinkedIn are more general approaches to EFS, corporations face the challenge of implementing EFS that fit their specific needs and organizational structures.
+Four of the most commonly used organizational structures are the functional structure, which focuses of a clear chain of command and separates the organization into different departments based of their expertise \cite{noauthor_what_nodate-1} , a product- or market-based structure where different departments are based on different products or markets instead of expertise, the geographical structure which divides teams based on their location and a process based structure which groups the employees into teams based on the business processes they are engaging in.   
+An alternative approach is the matrix structure. The matrix structure is on the rise with 84\% of employees being “matrixed” in some way according to a study of cross-functional teams conducted by Gallup.   The Matrix organization stands out by having multiple lines of reporting, meaning that employees have two or more bosses effectively.     This makes the Matrix organization a great match for agile working and cross functional teams. The main challenge that needs to be addressed regarding an EFS in a Matrix organization are dynamic and constantly changing tasks and fields of expertise, as people are incentivized to grow in those environments.
+Therefore, an EFS has to be able to handle those constant changes in ability, especially because it nearly impossible for the employees to keep track of all their colleagues’ skills over time. 
+Technologische Grundlagen (AI, …)
+Geschäftlicher Nutzen?
+Forschungslücken
 
-\section{Research interest}
-The findings of this paper will show the impact of an optimized knowledge transfer. Time savings, 
-efficiency gains and the impact on synergy effects will be presented in the course of the project.
-In addition, the prototype that will be developed in course of this project can be used as a template
-or basis for companies that want to develop a similar contact management tool and contact database.
-When focusing on the scientific aspect of this work, it will show the impact of optimization in this area,
-and findings can also be used in related fields, possibly even creating new perspectives in some areas.
 
+\subsection{Problem Statement}
+In an Harvard Business Review article, John Ferraro, the former COO of Ernst \& Young suggests, that in order to keep up with the pace of change, companies have to constantly reorganize.  On the other hand, according to a McKinsey survey, over 80\% fail to deliver the hoped-for value in time, with 10\% even causing real damage to the company.  The article also states that two-thirds of company reorganizations do at lease improve the performance to a degree.  This suggests that there is still some room for improvement regarding the performance. 
+This room can be utilized by increasing the efficiency of internal processes with an EFS in a few ways. 
+This paper evaluates the design and piloting of such an EFS at the Field Operations Mobile (T-FOPS) (Figure 1) team at Deutsche Telekom Technik GmbH (DTT). T-FOPS utilizes a mixture of different organizational structures. On the top-level it is a functionally and partially geographical divided in the sectors Business Operations (T-FOBIZ), Field Operations Mobile CORE (F-FOC), RAN Norddeutschland (T-FORN) and RAN Süddeutschland (T-FORS), the last two meaning North- and South-Germany. The Thesis will focus on T-FOBIZ (Figure 2) which is subdivided functionally into the Digital Unit (T-FOBOD), Operations Support (T-FOBOS), Temporäre Mobilfunkversorgung (T-FOBOT) meaning temporary mobile coverage, and Vergabemanagement (F-FOBOV) meaning procurement management. 
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{abbildungen/FopsOrga}
+    \caption{Organization Chart T-FOPS}
+    \label{fig:FopsOrga}
+    source: own illustration
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{abbildungen/FobizOrga}
+    \caption{Organization Chart T-FOBIZ}
+    \label{fig:FobizOrga}
+    source: own illustration
+\end{figure}
+
+\subsection{Structure of the Thesis}
+
+\subsection{Scope and Limitations}
 
