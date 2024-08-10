@@ -368,10 +368,10 @@ mincrossrefs = 1
 % Abkürzungsverzeichnis
 %-----------------------------------
 % Falls das Abkürzungsverzeichnis benötigt wird, füge es hier ein
-%\phantomsection
-%\addcontentsline{toc}{section}{\abbreHeadingName}
-%\input{abkuerzungen/acronyms}
-%\newpage
+\phantomsection
+\addcontentsline{toc}{section}{\abbreHeadingName}
+\input{abkuerzungen/acronyms}
+\newpage
 
 %-----------------------------------
 % Symbolverzeichnis
@@ -451,7 +451,7 @@ mincrossrefs = 1
 \renewcommand{\bibliography}[1]{\printbibliography}
 
 %\bibliography{literatur/literatur}
-\printbibliography[title=Literaturverzeichnis]
+\printbibliography[title=Bibliography]
 \addtocontents{toc}{\protect\newpage} %Eine neue Seite für die Versicherung
 
 \input{kapitel/anhang/erklaerung}
