@@ -2,95 +2,66 @@
 \section{Introduction}
 
 \subsection{Background}
-Expert finding is an important asset especially for big corporations, as it can boost efficiency and lower the barrier of 
-entry for new employees.
+In this section, the background of the thesis is presented. The section is divided into five parts. First the term \ac{EFS} is defined, followed by providing a historical overview of the developments in the field of \ac{EFS}. Afterwards the current state of \ac{EFS} is briefly discussed. Finally, the organizational structures and technological foundations are presented in the last two parts of the section.
 
-In the context of this thesis, an (\ac{EFS}) is defined as a specialized system, designed to help employees identify and find:
 
-\begin{itemize}
-    \item Individuals with specific expertise, skills or responsibilities
-    \item Relevant topics and information
-    \item Workflows to solve specific concerns
-\end{itemize}
-
-In addition the (\ac{EFS}) is characterized by:
+\subsubsection{Definition of \ac{EFS}}
+Traditionally, an \ac{EFS} or \ac{ELS} is a tool or technology, that enables users to identify and locate subject-matter experts with the aim of acquiring or utilizing the expert’s knowledge \parencite[1]{maybury_expert_2006}. According to \textcite[vii, 3]{maybury_expert_2006}, an \ac{EFS} must fulfill certain key requirements:
 
 \begin{itemize}
-    \item An AI search to match the user’s query with the most relevant results
-    \item A user interface that is intuitive and easy to use
-    \item An administration and maintenance system that allows the administrators to manage the data and the users to report changes and errors in the data
+    \item \textbf{Identification:} An \ac{EFS} must be able to identify experts. This can be achieved through self-nomination by the expert, or the automated identification based on documents like publications \parencite[vii, 3]{maybury_expert_2006}, \parencite[3]{stankovic_looking_2010}, expert communication or the analysis of expert activities. 
+    \item \textbf{Classification:} An \ac{EFS}, based on a variety of different sources of evidence, must classify the specific type and level of expertise an expert possesses, and 
+    \item \textbf{Validation:} Assess the range and depth of an expert’s professional knowledge and skills. This can be done by human validation in the form of assessing qualification evidence, or by automated user feedback in the form of ratings or reviews. 
+    \item \textbf{Ranking:} The system must have the ability to rank experts based on different factors like field of expertise, experience, certification, publications and reputation.
+    \item \textbf{Recommendation:} An \ac{EFS} has to be able to return an ordered list of experts or groups of experts based on specific expertise needs in combination with importance criteria (e.g., experience, reputation etc.)
 \end{itemize}
 
+While the traditional definition of \ac{EFS} offers a comprehensive overview regarding the requirements for identification and classification of experts effectively, the specific context of this thesis requires some modifications for the definition to be applicable to the use case of the thesis. The thesis is less focused on the knowledge transfer between experts and users, but rather on a much more goal-oriented approach in which the main objective is to find specific contacts in the company in order to solve or complete certain problems or tasks. The focus is therefore less on learning what the experts know but more on the system telling the user who the experts are and what they need to complete certain tasks, or even providing the user with workflows to solve the task. Based on this, the following definition for \ac{EFS} is proposed: An \ac{EFS} is a specialized system, that not only identifies relevant experts and contact persons within an organization, but also provides the user with concrete recommendations for solving specific problems and providing the user with resources to solve the problems tasks efficiently. In contrast to the traditional definition, where transfer of knowledge is the main focus, the main goal of the \ac{EFS} in this thesis is the direct support in accomplishing tasks.
 
+\subsubsection{Historical Context of \ac{EFS}}
+First appearances of the concept of \ac{EFS} can be traced back to the late 1990s and early 2000s with contributions like “Enterprise expert and knowledge discovery” \parencite{mattox_enterprise_1999} and “Facilitating the Online Search of Experts at NASA Using Expert Seeker People-Finder” \parencite{becerra-fernandez_facilitating_2000} as well as "Searchable Answer Generating Environment (SAGE): A Knowledge Management System for Searching for Experts in Florida" \parencite{becerra-fernandez_searchable_1999}. These early systems had the primary goal of connecting users with experts in order to facilitate knowledge transfer and collaboration, often in an academic setting. \parencite[1]{mattox_enterprise_1999} \parencite[3-3]{becerra-fernandez_facilitating_2000} \parencite[3]{becerra-fernandez_searchable_1999}. On the technical side, these systems relied heavily on keyword search with basic search approaches as can be seen in \textcite[4-5]{mattox_enterprise_1999} for example. However, early approaches of \ac{AI} in the form of data mining and clustering techniques were utilized in \textcite[3-1]{becerra-fernandez_facilitating_2000} to enhance their functionality, and early research on the role of \ac{AI} technologies in \ac{EFS} was conducted by \textcite{becerra-fernandez_role_2000}. Following, \textcite{maybury_expert_2006} conducted extensive research on the topic of \ac{EFS} in the Paper “Expert Finding Systems”. Those early research efforts not only laid the foundation for the research on the topic, but also highlighted the potential, future technologies could have on the field of \ac{EFS}. Over the years, the need for \ac{EFS} has only increased, with expertise becoming more and more recognition as a key asset for companies \parencite[1]{husain_expert_2019}. Developments of the last 20 years like globalization, digitization or remote work and trends such as agile working have, on the other hand, added a new layer of complexity in this field. 
 
-First appearances of \ac{EFS} can be traced back to the papers “Enterprise expert and knowledge discovery” (\cite{mattox_enterprise_1999}) and 
-“Facilitating the Online Search of Experts at NASA Using Expert Seeker People-Finder” (\cite{becerra-fernandez_facilitating_nodate}) . Further research has been 
-conducted by Mark T. Maybury in his Paper “Expert Finding Systems” (\cite{maybury_expert_2006}). The National Forum on Expert Finding Systems states Research 
-Gate, LinkedIn or Harvard Catalyst Profiles as current examples of \ac{EFS}. (\cite{noauthor_national_nodate})
-\\ \\
-While examples like Research Gate or LinkedIn are more 
-general approaches to \ac{EFS}, corporations face the challenge of implementing \ac{EFS} that fit their specific needs and organizational structures.
-Four of the most commonly used organizational structures are the functional structure, which focuses of a clear chain of command and separates the organization 
-into different departments based of their expertise (\cite{noauthor_what_nodate-1}) , a product- or market-based structure where different departments are based on 
-different products or markets instead of expertise, the geographical structure which divides teams based on their location and a process based structure which 
-groups the employees into teams based on the business processes they are engaging in. (\cite{organ_7_2023})   
-An alternative approach is the matrix structure. The matrix structure is on the rise with 84\% of employees being “matrixed” in some way according to a study of 
-cross-functional teams conducted by Gallup. (\cite[page 65]{inc_state_nodate}) The Matrix organization stands out by having multiple lines of reporting, meaning 
-that employees have two or more bosses effectively. (\cite{noauthor_what_nodate})(\cite{organ_7_2023}) This makes the Matrix organization a great match for agile working and cross functional teams. The main challenge that needs to be addressed regarding an \ac{EFS} in a Matrix organization are dynamic and constantly changing tasks and fields of expertise, as people are incentivized to grow in those environments.
-Therefore, an \ac{EFS} has to be able to handle those constant changes in ability, especially because it nearly impossible for the employees to keep track of all their 
-colleagues’ skills over time.
-\\ \\
-The efficiency of \ac{EFS} is closely tied to the different technologies that are being used. Therefore the following components and technologies are of interest for the \ac{EFS}:
+\subsubsection{Current State of \ac{EFS}}
+Today, \ac{EFS} are used in a variety of different contexts and industries like in academia, enterprise or medicine. Use cases range from finding research collaborators, over recommending developers for specific tasks, up to forming teams \parencite[2,9]{husain_expert_2019}. Additionally, the technologies used in \ac{EFS} have evolved over the years. While traditional \ac{EFS} relied heavily on keyword search as seen in \textcite[4-5]{mattox_enterprise_1999}, modern \ac{EFS} utilize \ac{AI} technologies like \ac{NLP} and \ac{ML} to enhance their search quality as well as information retrieval \parencite[19-20]{husain_expert_2019}. Those technologies also enable the processing of significantly larger amounts of data resulting in a more effective counter to the data overload problem, which is one of the reasons \ac{EFS} are needed in the first place \parencite[1]{husain_expert_2019}.
+
+\subsubsection{Organizational Structures}
+Corporations face the challenge of implementing \ac{EFS} that fit their specific needs and organizational structures. Four of the most commonly used organizational structures are the functional structure, which focuses of a clear chain of command and separates the organization into different departments based of their expertise \parencite{noauthor_what_nodate-1}, a product- or market-based structure where different departments are based on different products or markets instead of expertise, the geographical structure which divides teams, based on their location and a process based structure which groups the employees into teams based on the business processes they are engaging in. \parencite{organ_7_2023} An alternative approach is the matrix structure. The matrix structure is on the rise with 84\% of employees being “matrixed” in some way according to a study of cross-functional teams conducted by Gallup \parencite[page 65]{inc_state_nodate}. The Matrix organization stands out by having multiple lines of reporting, meaning that employees have two or more bosses effectively \parencite{noauthor_what_nodate, organ_7_2023}. This makes the Matrix organization a great match for agile working and cross-functional teams. The main challenge that needs to be addressed regarding an \ac{EFS} in a Matrix organization are dynamic and constantly changing tasks and fields of expertise, as people are incentivized to grow in those environments. Therefore, an \ac{EFS} has to be able to handle those constant changes in ability, especially because it is nearly impossible for the employees to keep track of all their colleagues’ skills over time. 
+
+\subsubsection{Technologies}
+The efficiency of \ac{EFS} is closely tied to the different technologies that are being used. Therefore, the following components and technologies are of interest for the \ac{EFS}:
 \begin{itemize}
-    \item \textbf{Reliable data:} Data quality is one of the most important factors for the success of an \ac{EFS} as it is the basis for the search algorithm. Some of the
-    more popular data sources of commercial tools are Self declared data, Documents and Databases (\cite[page 18]{maybury_expert_2006})
-    \item \textbf{Search algorithm:} The search algorithm is the core of the \ac{EFS}. It has to be able to handle the data and provide the user with the most relevant 
-    results. Here Keyword search, and Boolean search are the most common methods with the Natural Language Search which utilizes \ac{NLP} being on the third place,
-    thogh since the release of the paper by Mark T. Maybury in 2006 (\cite[page 18]{maybury_expert_2006}), \ac{NLP} has gained a lot of popularity especially 
-    through the rise of \ac{AI} and Machine Learning with applications in Chatbots, Voice Assistants and Sentiment analysis (\cite{administrator_role_2023}).
-    \item \textbf{\ac{UI}:} The \ac{UI} is the interface between the user and the \ac{EFS}. It has to be intuitive and easy to use in order for the user to actually use the \ac{EFS}.
-    The \ac{UI} of an \ac{EFS} most commonly consists of different components like a search bar, a results overview and detail pages for each result based on the review of big 
-    \ac{EFS} like LinkedIn (\cite{noauthor_linkedin_nodate}), Research Gate (\cite{noauthor_researchgate_nodate}) or Expertise Finder (\cite{noauthor_expertise_nodate-1}). 
-    Regarding the results overview, a list of experts seems to be the most common approach, with related documents and related concepts also being provided in some 
-    cases. (\cite[page 18]{maybury_expert_2006})
-    \item \textbf{Administration and Maintenance:} The \ac{EFS} has to be maintained and updated regularly in order to keep up with the changes in the organization. This includes an 
-    Admin-Panel for the administrators to manage the data, as well as a feedback system for the users to report changes and errors in the data.
-
+    \item \textbf{Reliable data:} Data quality is one of the most important factors for the success of an \ac{EFS} as it is the basis for the search algorithm. Some of the more popular data sources of commercial tools are Self declared data, Documents and Databases \parencite[18]{maybury_expert_2006}
+    \item \textbf{Search algorithm:} The search algorithm is the core of the \ac{EFS}. It has to be able to handle the data and provide the user with the most relevant results. Here Keyword search, and Boolean search are the most common methods with the Natural Language Search which utilizes \ac{NLP} being on the third place, though since the release of the paper by Mark T. Maybury in 2006 \parencite[18]{maybury_expert_2006}, \ac{NLP} has gained a lot of popularity especially through the rise of \ac{AI} and Machine Learning with applications in Chatbots, Voice Assistants and Sentiment analysis \parencite{administrator_role_2023}. 
+    \item \textbf{\ac{UI}:} The \ac{UI} is the interface between the user and the \ac{EFS}. It has to be intuitive and easy to use in order for the user to actually use the \ac{EFS}. The \ac{UI} of an \ac{EFS} most commonly consists of different components like a search bar, a result overview and detail pages for each result based on the review of big \ac{EFS} like LinkedIn \parencite{noauthor_linkedin_nodate}, Research Gate \parencite{noauthor_researchgate_nodate} or Expertise Finder \parencite{noauthor_expertise_nodate-1}. Regarding the results overview, a list of experts seems to be the most common approach, with related documents and related concepts also being provided in some cases. \parencite[18]{maybury_expert_2006}
+    \item \textbf{Administration and Maintenance:} The \ac{EFS} has to be maintained and updated regularly in order to keep up with the changes in the organization. This includes an Admin-Panel for the administrators to manage the data, as well as a feedback system for the users to report changes and errors in the data.
 \end{itemize}
+In addition, FastAPI, React with Scale and Google Firebase are used in this project. FastAPI is an easy-to-use web framework for building python based \acp{API} \parencite{noauthor_fastapi_nodate} and is used as the projects' backend with the main purpose of handling the \ac{AI} based search. React is the frontend framework of choice. It is the most popular web framework among professional developers according to \textcite{noauthor_technology_nodate} with 41.6\% of the 38132 responses. It offers great documentation and reusable components. In combination with React, scale is the component library for the system. It is an open source library providing production-ready UI components with brand compliance and accessibility in mind \parencite{noauthor_faq_nodate}. Lastly, Google Firebase is used as the database for the \ac{EFS}. Firebase offers a variety of different services both for development and production like the database, authentication, hosting and analytics. Firebase was chosen, for its ease of implementation and great documentation.
 
-Geschäftlicher Nutzen?
-Forschungslücken
 
 \subsection{Research Question}
+The main research question of the thesis is: \\
+\textit{How can an Expert Finder system for corporate structures be designed and implemented?}
+In order to answer this question, the question is broken down into smaller sub-questions: 
+\begin{itemize}
+    \item \textit{What are the key functionalities an expert finder should possess?} 
+    \item \textit{How can the user interface be designed to enable intuitive usage?}
+    \item \textit{Which \ac{AI} supported search method is best suited for the expert finder based on accuracy, scalability and ease of integration?}
+    \item \textit{How can a workflow system be implemented to provide the user with concrete recommendations for solving specific problems?}
+\end{itemize}
 
 \subsection{Problem Statement}
-In an Harvard Business Review article, John Ferraro, the former COO of Ernst \& Young suggests, that in order to keep up with the pace of change, companies have 
-to constantly reorganize. (\cite{heidari-robinson_getting_2016}) On the other hand, according to a McKinsey survey, over 80\% fail to deliver the hoped-for value in time, with 10\% even causing real 
-damage to the company.(\cite{heidari-robinson_getting_2016}) The article also states that two-thirds of company reorganizations do at lease improve the performance to a degree. (\cite{heidari-robinson_getting_2016}) This suggests that 
-there is still some room for improvement regarding the performance. 
-This room can be utilized by increasing the efficiency of internal processes with an \ac{EFS} in a few ways. 
-This paper evaluates the design and piloting of such an \ac{EFS} at the \ac{T-FOPS} (Figure 1) team at \ac{DTT}. 
-\ac{T-FOPS} utilizes a mixture of different organizational structures. On the top-level it is a functionally and partially geographical divided in the sectors 
-\ac{T-FOBIZ}, \ac{T-FOC}, \ac{T-FORN} and \ac{T-FORS}, the last two meaning North- and 
-South-Germany. The Thesis will focus on \ac{T-FOBIZ} (Figure 2) which is subdivided functionally into the \ac{T-FOBOD}, \ac{T-FOBOS}, 
-\ac{T-FOBOT} meaning temporary mobile coverage, and \ac{F-FOBOV} meaning procurement management. 
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.7\textwidth]{abbildungen/FopsOrga}
-    \caption{Organization Chart \ac{T-FOPS}}
-    \label{fig:FopsOrga}
-    source: own illustration
-\end{figure}
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.7\textwidth]{abbildungen/FobizOrga}
-    \caption{Organization Chart \ac{T-FOBIZ}}
-    \label{fig:FobizOrga}
-    source: own illustration
-\end{figure}
+In large companies and organizations, identifying and finding experts is a common challenge. As a company grows, so does the complexity of its internal organization, making it increasingly difficult for the companies as well as their employees to keep an overview over the existing experts and contact persons. Factors like a rise in mobile work and agile teams only act as a catalyst towards this problem. This gets problematic, as it is crucial for employees to be able to find the right contact persons or experts to help them fulfill tasks more efficiently. When not addressed, this problem results in different consequences like loss of time and resources due to unproductivity, duplication of work as well as missed opportunities for collaboration. \\
+Traditional systems address this problem by enabling users to search for experts and providing the contact data of the resulting experts. Those systems often times are focused primarily on the transfer of knowledge and don't emphasize enough on task completion. This often results in users having to take the extra step to contact the found experts outside the \ac{EFS}. This ends up in unnecessary effort both for the users, as they have to contact the experts themselves, and the experts, as users often times fail on providing all the necessary information outright. In addition, current systems most of the time are very costly to develop and maintain, with recent advancements in \ac{LLM} and \ac{NLP} leaving room for improvement to realize a better user experience.
 
 \subsection{Structure of the Thesis}
+This thesis is structured in seven chapters to provide the reader with a comprehensive understanding of the topic and the research conducted. The first chapter introduces the topic in highlighting the background of the thesis as well as the research question. It also defines the scope and delimitations of the thesis. The second chapter outlines previous research conducted on the topic of \ac{EFS} and provides the fundamentals of the technologies utilized in this thesis. Additionally, it identifies the research gap that this thesis addresses. In the third chapter the methods used for research and development are highlighted to provide the reader with an understanding of the research process. The fourth chapter presents the implementation of the \ac{EFS} and discusses technical details of the implemented system. The fifth chapter evaluates the proposed system in establishing evaluation criteria, and analyzing feedback and performance. It also tries to address the strengths and weaknesses of the system. In the sixth chapter, the results of the previous chapters are interpreted and discussed. Lastly, in the seventh chapter concludes the work by summarizing the findings, pointing out potential optimizations and proposing future work.
 
-\subsection{Scope and Limitations}
+\subsection{Scope and Delimitations}
+\begin{itemize}
+    \item \textbf{Scope:}\\
+    The study focuses on designing and developing a prototype aimed at providing the user with recommendations of experts and workflows fit to their needs. The scope includes four main components. First, an \ac{AI} supported search aimed at providing the user with the most relevant results for a given query. Secondly, a database of experts workflows and topics managed by an administration panel, for the administrators to create update and delete data. At third, a workflow builder that enables administrators to create workflows aimed at directly solving the users needs without the need of additional contact to the expert, and lastly a user-friendly \ac{UI} that enables the user to easily navigate the system, browse over experts and transparently communicates the quality of the results. The prototype is designed to initially be used by a small selected group of people, with the potential to be scaled up over time. The concept is especially aimed at larger structures, where seamless communication and collaboration is very important but often hard to achieve.
+    \item \textbf{Delimitations:}\\
+    Regarding \ac{AI} the study specifically inspects how it can enhance the search for experts and workflows in an expert and workflow database, and which \ac{AI} technology fits the best for the given use case. This does not include \ac{AI} supported expert identification or validation and instead provides administrators with an option to add experts and workflows themselves. Also, the workflow builder will be limited to just the most important features to prove the concept. While privacy and data protection will be considered to a degree, the primary focus of the study is on functionality and efficiency of the prototype.
+\end{itemize}
+
 

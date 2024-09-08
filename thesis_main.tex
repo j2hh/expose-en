@@ -13,7 +13,7 @@
 %-----------------------------------
 % Dokumentensprache
 %-----------------------------------
-%\def\FOMEN{}% Auskommentieren um die Dokumentensprache auf englisch zu ändern
+\def\FOMEN{}% Auskommentieren um die Dokumentensprache auf englisch zu ändern
 \newif\ifde
 \newif\ifen
 
@@ -95,36 +95,37 @@
 \usepackage{listings}
 % JavaScript als Sprache definieren:
 \lstdefinelanguage{JavaScript}{
-    keywords={break, super, case, extends, switch, catch, finally, for, const, function, try, continue, if, typeof, debugger, var, default, in, void, delete, instanceof, while, do, new, with, else, return, yield, enum, let, await},
-    keywordstyle=\color{blue}\bfseries,
-    ndkeywords={class, export, boolean, throw, implements, import, this, interface, package, private, protected, public, static},
-    ndkeywordstyle=\color{darkgray}\bfseries,
-    identifierstyle=\color{black},
-    sensitive=false,
-    comment=[l]{//},
-    morecomment=[s]{/*}{*/},
-    commentstyle=\color{purple}\ttfamily,
-    stringstyle=\color{red}\ttfamily,
-    morestring=[b]',
-    morestring=[b]"
+	keywords={break, super, case, extends, switch, catch, finally, for, const, function, try, continue, if, typeof, debugger, var, default, in, void, delete, instanceof, while, do, new, with, else, return, yield, enum, let, await},
+	keywordstyle=\color{blue}\bfseries,
+	ndkeywords={class, export, boolean, throw, implements, import, this, interface, package, private, protected, public, static},
+	ndkeywordstyle=\color{darkgray}\bfseries,
+	identifierstyle=\color{black},
+	sensitive=false,
+	comment=[l]{//},
+	morecomment=[s]{/*}{*/},
+	commentstyle=\color{purple}\ttfamily,
+	stringstyle=\color{red}\ttfamily,
+	morestring=[b]',
+	morestring=[b]"
 }
 
 \lstset{
-    %language=JavaScript,
-    numbers=left,
-    numberstyle=\tiny,
-    numbersep=5pt,
-    breaklines=true,
-    showstringspaces=false,
-    frame=l ,
-    xleftmargin=5pt,
-    xrightmargin=5pt,
-    basicstyle=\ttfamily\scriptsize,
-    stepnumber=1,
-    keywordstyle=\color{blue},          % keyword style
-    commentstyle=\color{dkgreen},       % comment style
-    stringstyle=\color{mauve}         % string literal style
+	%language=JavaScript,
+	numbers=left,
+	numberstyle=\tiny,
+	numbersep=5pt,
+	breaklines=true,
+	showstringspaces=false,
+	frame=l ,
+	xleftmargin=5pt,
+	xrightmargin=5pt,
+	basicstyle=\ttfamily\scriptsize,
+	stepnumber=1,
+	keywordstyle=\color{blue},          % keyword style
+  	commentstyle=\color{dkgreen},       % comment style
+  	stringstyle=\color{mauve}         % string literal style
 }
+
 
 %-----------------------------------
 %Literaturverzeichnis Einstellungen
