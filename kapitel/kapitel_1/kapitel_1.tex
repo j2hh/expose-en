@@ -1,13 +1,65 @@
 \newpage
 \section{State of Research} 
+The following chapter offers an overview on the state-of-the-art research on \acp{EFS} as well as the concepts and technologies related to the topic and used in the prototyping and implementation, to give a basic understanding on the topic. This is particularly important in order to take previous findings into account for this work and to highlight research gaps. The chapter is split into 5 sub-topics which focus on \acp{EFS} as such, the basics of the underlying technologies, \ac{UI} design of \acp{EFS}, the integration of workflows in \acp{EFS} and finding research gaps in this field of research.
 
-\subsection{Expert Finder Systems}
+\subsection{Overview of \acl{EFS}}
+
+\subsubsection{Historical Development}
+The Topic of \acp{EFS} has now been researched for around 35 years. One of the first studies in this field was conducted by \textcite{ackerman_answer_1990} in the conference paper \citetitle{ackerman_answer_1990}. Answer Garden was designed as a tool, allowing organizations to implement a database of \ac{FAQ} and corresponding answers, in order to better utilize the knowledge of their knowledgeable employees. The tool was aimed at user-groups that often times had to repeatedly answer the same questions, with occasionally new questions not answered before. The system on the one hand allowed users to explore the database of questions and answers with a branching network, a component functioning like a decision tree by guiding a user through a series of choices, with the goal of providing the user with the fitting answer. On the other hand the system will, in case no fitting answer is available, direct the users´question to a matching expert, whose answer is then returned to both the user and the database, so other users won't have to consult an expert for this specific question no more \parencite[1,3]{ackerman_answer_1990}. Regarding the identification of experts, systems of this time relied on the manual input of experts, which compared to current systems is much more time-consuming.
+A few years later, the journal article \citetitle{schwartz_discovering_1993} by \textcite{schwartz_discovering_1993} was published. In comparison to Answer Garden, the system was not specifically designed to answer specific questions but rather to find people with specific interests or expertise. Regarding the aspect of people finding, in contrast to the typical approach where a directory from explicitly registered data was used for locating people, a system displaying shared interests and expertise of different people was proposed \parencite[1-2]{schwartz_discovering_1993}. To achieve this, e-mail communication was analyzed via graph analysis \parencite[9]{schwartz_discovering_1993}. The approach was chosen to not only solve the "white page" problem, describing the issue of locating a particular user, but also address the "yellow page" problem, which describes the issue of finding a user with a specific interest or expertise \parencite[1]{schwartz_discovering_1993}.\\
+
+
+\subsubsection{Different Types of \acl{EFS}}
+\paragraph{Knowledge-Transfer-Oriented \acl{EFS}} %Evlt auch \paragraph{Collaboration-Oriented \acl{EFS}}
+\paragraph{Task-Oriented \acl{EFS}}
+
+
 
 \subsection{Technological Foundations}
 
-\subsection{User Interface Design for Expert Finder Systems} 
 
-\subsection{Integration of Workflows in Expert Finder Systems}
+\subsubsection{\aclp{LLM}, \acl{NLP}, and \acl{ML} in \aclp{EFS}}
+\paragraph{\aclp{LLM}}
+\paragraph{\acl{NLP}}
+\paragraph{\acl{ML}}
+%? \paragraph{Integration of \acl{LLM}, \acl{NLP}, and \acl{ML} in \aclp{EFS}}
+
+
+\subsubsection{Frontend and Backend Technologies used}
+\paragraph{React (Frontend)}
+\paragraph{FastAPI (Backend)}
+\paragraph{Role of \aclp{API} in \aclp{EFS}}
+%? \paragraph{Firebase (Backend)}
+
+
+\subsubsection{Data Sources and Data Quality}
+\paragraph{Reliability of Data}
+\paragraph{Common Data Sources in \aclp{EFS}}
+
+\subsubsection{Self-Hosted vs. Third-Party Solutions}
+\paragraph{Self-Hosted Solutions} %Mixtral, Quandt Mixtral, NLP with BERT
+\paragraph{Third-Party Solutions} %GPT4, GPT3.5
+
+
+
+\subsection{Integration of Workflows in \aclp{EFS}}
+
+\subsubsection{Task-Oriented Design in \aclp{EFS}}
+\subsubsection{Automation and \ac{AI} integration}
+\subsubsection{Challenges and Solutions in Workflow Integration}
+
+\subsection{User \ac{UI} Design for \aclp{EFS}} 
+\subsubsection{Key \ac{UI} Components of an \acl{EFS}}
+\paragraph{Search Bar}
+\paragraph{Results Overview}
+\paragraph{Expert Profile}
+
+
 
 \subsection{Gaps in the Literature}
+
+
+\subsubsection{Gaps in Task-Oriented \acl{EFS} Research}
+\subsubsection{Gaps in \acl{LLM} Based EFS Research}
+
 
